@@ -1,0 +1,13 @@
+<div class = "col-sm-8 col-sm-offset-2">
+  <% @puppies.each do |puppy| %>
+    <div class = "row">
+      <h2> <%= puppy.name %> </h2>
+    </div>
+    <div class = "row">
+      <h4> <%= puppy.breed %></h4>
+    </div>
+    <div class = "row">
+      <hr />
+    </div>
+  <% end %>
+</div>
