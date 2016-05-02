@@ -1,0 +1,28 @@
+<div class = "col-sm-8 col-sm-offset-2">
+
+  <div class = "row">
+    <h1>Login 2 see d puppers</h1>
+  </div>
+
+  <%= form_tag '/login' do %>
+    <div class = "row">
+      Email: <br />
+      <%= text_field_tag :email, nil, class: "form-control" %>
+    </div>
+    <br />
+    <div class = "row">
+      Password: <br />
+      <%= password_field_tag :password, nil, class: "form-control" %>
+    </div>
+    <br />
+    <div class = "row">
+      <%= submit_tag "Submit", class: "btn btn-success" %>
+    </div>
+  <% end %>
+
+  <br />
+  <div class = "row">
+    <%= link_to "need 2 makes acct?", new_user_path %>
+  </div>
+
+</div>

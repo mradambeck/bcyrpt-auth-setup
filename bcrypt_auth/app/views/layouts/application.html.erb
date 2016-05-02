@@ -16,6 +16,15 @@
         <div class = "row">
           <h4><em>A meticulously curated collection of favorite pups.</em></h4>
         </div>
+
+        <div class = "row">
+          <% if current_user %>
+            Made just for <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
+          <% else %>
+            <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+          <% end %>
+        </div>
+
         <div class = "row">
           <hr />
         </div>
